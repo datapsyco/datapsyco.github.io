@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="DataPsyco">
 <meta property="og:description" content="Github + Hexo + Next定制个性化酷站 创建或使用github账号 新建一个xxx.github.io(xxx与github用户名相同)的仓库.  生成并添加SSH-KEY   本地安装git 123456789101112131415161718192021$ ssh-keygen -t rsa -C &quot;你的邮箱&quot;Generating public/private rsa key">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-24T01:38:38.618Z">
+<meta property="og:updated_time" content="2018-01-24T01:49:02.543Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo next setup">
 <meta name="twitter:description" content="Github + Hexo + Next定制个性化酷站 创建或使用github账号 新建一个xxx.github.io(xxx与github用户名相同)的仓库.  生成并添加SSH-KEY   本地安装git 123456789101112131415161718192021$ ssh-keygen -t rsa -C &quot;你的邮箱&quot;Generating public/private rsa key">
@@ -238,7 +238,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="datapsyco">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -354,8 +354,13 @@
 <h2 id="下载Next主题"><a href="#下载Next主题" class="headerlink" title="下载Next主题"></a>下载<a href="https://github.com/iissnan/hexo-theme-nexti" target="_blank" rel="noopener">Next</a>主题</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 当前目录: ~/blog/</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <h3 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h3><p>修改<code>站点</code>配置文件,将主题<code>theme</code>参数改成 <code>next</code></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文件位置： ~/blog/~config.yml</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/thems/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-<h3 id="修改Site配置"><a href="#修改Site配置" class="headerlink" title="修改Site配置"></a>修改Site配置</h3><p>添加站点<code>标题</code>、<code>描述</code>、<code>作者</code>、<code>网站语言</code>、<code>时区</code>等配置:</p>
+<h3 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改站点配置文件</h3><p>添加站点<code>标题</code>、<code>描述</code>、<code>作者</code>、<code>网站语言</code>、<code>时区</code>等配置:</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文件位置： ~/blog/_config.yml</span></span><br><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">DataPsyco</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">Data</span> <span class="string">Code</span> <span class="string">Life</span></span><br><span class="line"><span class="attr">description:</span> <span class="literal">No</span> <span class="string">Data</span> <span class="literal">No</span> <span class="string">Life~</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">datapsyco</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br></pre></td></tr></table></figure>
+<h2 id="Next主题配置"><a href="#Next主题配置" class="headerlink" title="Next主题配置"></a>Next主题配置</h2><p>修改<code>next主题</code>配置文件，更多详细配置，请查阅<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Next官方文档</a>。</p>
+<blockquote>
+<p><code>主题</code>配置文件和<code>站点</code>配置文件名字都叫<code>_config.yml</code>,但是<code>主题</code>配置文件在<code>~/blog/themes/next/_config.yml</code>。修改时请多留意</p>
+</blockquote>
+
       
     </div>
     
@@ -463,6 +468,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.gif"
+                alt="datapsyco" />
+            
               <p class="site-author-name" itemprop="name">datapsyco</p>
               <p class="site-description motion-element" itemprop="description">No Data No Life!</p>
           </div>
@@ -529,7 +538,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建或使用github账号"><span class="nav-number">1.</span> <span class="nav-text">创建或使用github账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地安装Node-js和Hexo"><span class="nav-number">2.</span> <span class="nav-text">本地安装Node.js和Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建博客"><span class="nav-number">3.</span> <span class="nav-text">搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">3.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git-部署插件"><span class="nav-number">3.2.</span> <span class="nav-text">安装 Git 部署插件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载Next主题"><span class="nav-number">4.</span> <span class="nav-text">下载Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题"><span class="nav-number">4.1.</span> <span class="nav-text">修改主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改Site配置"><span class="nav-number">4.2.</span> <span class="nav-text">修改Site配置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建或使用github账号"><span class="nav-number">1.</span> <span class="nav-text">创建或使用github账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地安装Node-js和Hexo"><span class="nav-number">2.</span> <span class="nav-text">本地安装Node.js和Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建博客"><span class="nav-number">3.</span> <span class="nav-text">搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">3.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git-部署插件"><span class="nav-number">3.2.</span> <span class="nav-text">安装 Git 部署插件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载Next主题"><span class="nav-number">4.</span> <span class="nav-text">下载Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题"><span class="nav-number">4.1.</span> <span class="nav-text">修改主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改站点配置文件"><span class="nav-number">4.2.</span> <span class="nav-text">修改站点配置文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next主题配置"><span class="nav-number">5.</span> <span class="nav-text">Next主题配置</span></a></li></ol></div>
             
 
           </div>
